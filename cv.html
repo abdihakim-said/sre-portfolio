@@ -1,0 +1,476 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Abdihakim Said - Senior SRE & Multi-Cloud AI Specialist</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Calibri', 'Arial', sans-serif;
+            line-height: 1.4;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 15px;
+            background: white;
+        }
+        
+        .header {
+            text-align: center;
+            margin-bottom: 25px;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 15px;
+        }
+        
+        .name {
+            font-size: 32px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+            letter-spacing: 1px;
+        }
+        
+        .title {
+            font-size: 16px;
+            color: #666;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        
+        .contact-info {
+            font-size: 11px;
+            color: #555;
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+        
+        .contact-info a {
+            color: #2c5aa0;
+            text-decoration: none;
+        }
+        
+        .section {
+            margin-bottom: 22px;
+        }
+        
+        .section-title {
+            font-size: 15px;
+            font-weight: bold;
+            color: #2c5aa0;
+            border-bottom: 2px solid #2c5aa0;
+            padding-bottom: 4px;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        
+        .summary {
+            font-size: 11px;
+            text-align: justify;
+            margin-bottom: 18px;
+            line-height: 1.5;
+            background: #f8f9fa;
+            padding: 12px;
+            border-radius: 5px;
+            border-left: 4px solid #2c5aa0;
+        }
+        
+        .impact-banner {
+            background: linear-gradient(135deg, #2c5aa0, #3498db);
+            color: white;
+            padding: 12px;
+            border-radius: 8px;
+            text-align: center;
+            margin-bottom: 20px;
+            font-size: 12px;
+            font-weight: bold;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        
+        .achievements {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 12px;
+            margin-bottom: 20px;
+        }
+        
+        .achievement-item {
+            font-size: 10px;
+            padding: 10px;
+            background: #f8f9fa;
+            border-left: 4px solid #2c5aa0;
+            border-radius: 5px;
+            line-height: 1.4;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+        }
+        
+        .job-title {
+            font-size: 13px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 4px;
+        }
+        
+        .company-info {
+            font-size: 10px;
+            color: #666;
+            margin-bottom: 10px;
+            font-style: italic;
+        }
+        
+        .project-title {
+            font-size: 11px;
+            font-weight: bold;
+            color: #333;
+            margin: 10px 0 6px 0;
+            background: #e3f2fd;
+            padding: 6px 10px;
+            border-radius: 4px;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .bullet-points {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .bullet-points li {
+            font-size: 10px;
+            margin-bottom: 4px;
+            padding-left: 15px;
+            position: relative;
+            line-height: 1.4;
+        }
+        
+        .bullet-points li:before {
+            content: "▶";
+            color: #2c5aa0;
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+        
+        .skill-category {
+            margin-bottom: 12px;
+            background: #f8f9fa;
+            padding: 10px;
+            border-radius: 5px;
+            border-left: 3px solid #2c5aa0;
+        }
+        
+        .skill-category-title {
+            font-size: 11px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 6px;
+        }
+        
+        .skill-list {
+            font-size: 9px;
+            color: #555;
+            line-height: 1.4;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 2px 4px;
+            border-radius: 3px;
+            font-weight: bold;
+        }
+        
+        .metric {
+            color: #2c5aa0;
+            font-weight: bold;
+        }
+        
+        .education-item {
+            font-size: 10px;
+            margin-bottom: 10px;
+            background: #f8f9fa;
+            padding: 8px;
+            border-radius: 4px;
+        }
+        
+        .degree {
+            font-weight: bold;
+            color: #2c5aa0;
+        }
+        
+        .portfolio-section {
+            background: #f0f8ff;
+            padding: 15px;
+            border-radius: 8px;
+            border: 2px solid #e3f2fd;
+            margin-bottom: 20px;
+        }
+        
+        .portfolio-title {
+            font-size: 12px;
+            font-weight: bold;
+            color: #2c5aa0;
+            margin-bottom: 8px;
+        }
+        
+        .portfolio-item {
+            margin-bottom: 10px;
+            font-size: 9px;
+            line-height: 1.4;
+        }
+        
+        .portfolio-link {
+            color: #2c5aa0;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        
+        @media print {
+            body {
+                padding: 10px;
+            }
+            .achievements {
+                grid-template-columns: 1fr;
+            }
+            .skills-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="name">ABDIHAKIM SAID</div>
+        <div class="title">Senior Site Reliability Engineer & Multi-Cloud AI Integration Specialist</div>
+        <div class="contact-info">
+            <span>📍 London, UK</span>
+            <span>📧 <a href="mailto:abdihakimsaid1@gmail.com">abdihakimsaid1@gmail.com</a></span>
+            <span>📱 +44 7960305858</span>
+            <span>💼 <a href="https://www.linkedin.com/in/said-devops/">LinkedIn Profile</a></span>
+            <span>🌐 <a href="https://github.com/abdihakim-said/healthhub-enterprise-platform">GitHub Portfolio</a></span>
+        </div>
+    </div>
+
+    <div class="impact-banner">
+        🚀 FLAGSHIP ACHIEVEMENTS: HealthHub AI Healthcare Platform (10,000+ users, 99.94% uptime) • CloudMart E-Commerce Transformation ($2.25M monthly profit) • £4.5M+ Total Business Impact Delivered
+    </div>
+
+    <div class="section">
+        <div class="section-title">Executive Summary</div>
+        <div class="summary">
+            Senior Site Reliability Engineer and Multi-Cloud AI Integration Specialist with <span class="highlight">proven track record</span> of architecting production-grade platforms that deliver transformational business results. Creator of <span class="highlight">HealthHub AI Healthcare Platform</span> serving 10,000+ daily users with 99.94% uptime and <span class="highlight">CloudMart E-Commerce Platform</span> generating $2.25M monthly profit increase. Deep expertise across <span class="highlight">AWS, Azure, Google Cloud, and OpenAI</span> with comprehensive NHS healthcare domain knowledge. Achieved <span class="metric">99.96% average uptime</span>, <span class="metric">4.2-minute MTTR</span>, and <span class="metric">£4.5M+ cost optimization</span> while maintaining <span class="metric">zero security incidents</span> across regulated environments.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Business Impact Delivered</div>
+        <div class="achievements">
+            <div class="achievement-item">
+                <strong>🏥 HealthHub AI Healthcare Platform</strong><br>
+                • 10,000+ daily users with 99.94% uptime<br>
+                • $2.3M annual cost savings<br>
+                • Multi-cloud AI integration (AWS+Azure+Google+OpenAI)<br>
+                • Zero security incidents with HIPAA/GDPR compliance
+            </div>
+            <div class="achievement-item">
+                <strong>🛒 CloudMart E-Commerce Transformation</strong><br>
+                • $2.25M monthly profit increase<br>
+                • 99.97% Black Friday uptime (10x traffic, 500K+ users)<br>
+                • 90% customer support automation<br>
+                • 70% faster deployments via CI/CD
+            </div>
+            <div class="achievement-item">
+                <strong>⚡ SRE Excellence Achievements</strong><br>
+                • Industry-leading 4.2-minute MTTR<br>
+                • 99.96% average uptime across 15+ services<br>
+                • 85% reduction in system failures<br>
+                • Automated incident response implementation
+            </div>
+            <div class="achievement-item">
+                <strong>💰 Cost Optimization Results</strong><br>
+                • £4.5M+ total cost savings delivered<br>
+                • 63% cost reduction at Moorfields Hospital<br>
+                • 20% operational savings at Chelsea & Westminster<br>
+                • Multi-cloud optimization strategies
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Core Technical Expertise</div>
+        <div class="skills-grid">
+            <div>
+                <div class="skill-category">
+                    <div class="skill-category-title">🌐 Multi-Cloud AI Integration</div>
+                    <div class="skill-list">
+                        <strong>AWS:</strong> Lambda, DynamoDB, S3, CloudWatch, API Gateway, Cognito, Polly, Translate, EKS<br>
+                        <strong>Azure:</strong> AI Speech Services, Cognitive Services, AKS, Functions, Logic Apps<br>
+                        <strong>Google Cloud:</strong> Vision AI, BigQuery, GKE, Cloud Storage<br>
+                        <strong>OpenAI:</strong> GPT-4, Assistant API, Function Calling, Amazon Bedrock
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">⚡ Site Reliability Engineering</div>
+                    <div class="skill-list">
+                        <strong>Monitoring:</strong> Prometheus, Grafana, CloudWatch, ELK Stack, X-Ray<br>
+                        <strong>Reliability:</strong> SLI/SLO, Error Budgets, Chaos Engineering, MTTR Optimization<br>
+                        <strong>Incident Response:</strong> Automated runbooks, Intelligent alerting, Post-incident reviews
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">🔒 Healthcare Compliance & Security</div>
+                    <div class="skill-list">
+                        <strong>Regulations:</strong> GDPR, NHS Digital Standards, HIPAA, Clinical Risk Management<br>
+                        <strong>Security:</strong> Zero-trust architecture, DevSecOps, ISO 27001<br>
+                        <strong>Tools:</strong> Trivy, GuardDuty, IAM, IRSA, Secrets Manager
+                    </div>
+                </div>
+            </div>
+            <div>
+                <div class="skill-category">
+                    <div class="skill-category-title">🚀 DevOps & Infrastructure</div>
+                    <div class="skill-list">
+                        <strong>Orchestration:</strong> Kubernetes (EKS/AKS/GKE), Docker, Microservices<br>
+                        <strong>Infrastructure as Code:</strong> Terraform (95% automation), CloudFormation, ARM Templates<br>
+                        <strong>CI/CD:</strong> GitHub Actions, AWS CodePipeline, Blue-green deployments
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">📊 Data & Analytics</div>
+                    <div class="skill-list">
+                        <strong>Real-time Pipelines:</strong> DynamoDB Streams → Lambda → BigQuery<br>
+                        <strong>AI/ML Operations:</strong> Azure AI Language, Sentiment Analysis<br>
+                        <strong>Analytics:</strong> Custom dashboards, Business intelligence, Real-time processing
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <div class="skill-category-title">💻 Programming & Automation</div>
+                    <div class="skill-list">
+                        <strong>Languages:</strong> Python, PowerShell, Bash, YAML, JSON<br>
+                        <strong>Databases:</strong> DynamoDB, Azure SQL, RDS, Cosmos DB<br>
+                        <strong>Version Control:</strong> Git, GitHub, GitLab, Azure DevOps
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Professional Experience</div>
+        
+        <div class="job-title">Senior Site Reliability Engineer & Multi-Cloud AI Integration Specialist</div>
+        <div class="company-info">Luul Solutions Ltd | March 2022 - Present | London, UK</div>
+        
+        <div class="project-title">🏥 HealthHub Multi-Cloud AI Healthcare Platform (February 2025 - August 2024)</div>
+        <ul class="bullet-points">
+            <li>Architected enterprise healthcare AI platform serving <span class="metric">10,000+ daily patient interactions</span> with <span class="metric">99.94% uptime</span> exceeding healthcare SLA requirements</li>
+            <li>Successfully integrated <span class="metric">AWS + Azure + Google Cloud + OpenAI</span> achieving 99.8% API reliability for patient-critical systems</li>
+            <li>Delivered <span class="metric">$2.3M annual cost savings</span> through intelligent multi-cloud optimization and serverless architecture implementation</li>
+            <li>Built fault-tolerant serverless backend with <span class="metric">7 microservices handling 50,000+ daily requests</span> at 99.99% availability</li>
+            <li>Implemented comprehensive AI services: OpenAI GPT-4 for virtual assistance, Azure Speech Services for medical transcription (98% accuracy), Google Vision AI for disease detection</li>
+            <li>Maintained full <span class="metric">HIPAA and GDPR compliance</span> with automated audit trails, real-time monitoring, and zero security incidents across 8+ months</li>
+            <li>Achieved <span class="metric">industry-leading MTTR of 4.2 minutes</span> through automated incident response and comprehensive observability implementation</li>
+        </ul>
+
+        <div class="project-title">🛒 CloudMart AI-Driven E-Commerce Platform (March 2022 - January 2024)</div>
+        <ul class="bullet-points">
+            <li>Led complete legacy-to-modern transformation generating <span class="metric">$2.25M monthly profit increase</span> through strategic AI automation implementation</li>
+            <li>Reduced 500-person customer support team to 50 AI supervisors achieving <span class="metric">90% support automation</span> using OpenAI and Amazon Bedrock</li>
+            <li>Delivered <span class="metric">99.97% uptime during Black Friday</span> peak handling 10x traffic spike with 500K+ concurrent users</li>
+            <li>Implemented <span class="metric">70% faster deployments</span> (from days/weeks to hours) via automated CI/CD pipelines using GitHub Actions and AWS CodePipeline</li>
+            <li>Built real-time data analytics pipeline using <span class="metric">DynamoDB Streams → AWS Lambda → Google BigQuery</span> enabling data-driven business decisions</li>
+            <li>Successfully migrated monolithic architecture to containerized microservices using Docker and Kubernetes (Amazon EKS)</li>
+            <li>Provisioned multi-cloud infrastructure across AWS, Azure, and GCP using reusable Terraform modules with 95% automation coverage</li>
+            <li>Implemented comprehensive DevSecOps practices including IAM roles, IRSA, Trivy security scans, and centralized secrets management</li>
+        </ul>
+
+        <div class="project-title">🚀 Core SRE & Infrastructure Leadership</div>
+        <ul class="bullet-points">
+            <li>Maintained <span class="metric">99.96% average uptime</span> across 15+ production services over 3+ years with comprehensive monitoring and alerting</li>
+            <li>Reduced <span class="metric">MTTR from 45 minutes to 4.2 minutes</span> through automated runbooks, intelligent alerting, and incident response automation</li>
+            <li>Established comprehensive SLI/SLO/Error Budget methodology improving service reliability metrics by 65%</li>
+            <li>Mentored 8+ engineers on SRE practices, monitoring strategies, and cloud-native architecture with 75% achieving promotions or leadership roles</li>
+            <li>Led cultural transformation from traditional IT operations to modern DevOps and SRE practices across the organization</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="job-title">Cloud Engineer & Healthcare Infrastructure Specialist</div>
+        <div class="company-info">Moorfields Private Eye Hospital | February 2021 - March 2022 | London, UK</div>
+        
+        <ul class="bullet-points">
+            <li>Conducted comprehensive AWS infrastructure audit delivering <span class="metric">63% quarterly cost reduction (£1.2M+ annual savings)</span> through intelligent resource optimization</li>
+            <li>Architected GDPR and NHS Digital Standards compliant cloud infrastructure supporting <span class="metric">5,000+ daily patient records</span> with <span class="metric">99.9% uptime</span></li>
+            <li>Developed enterprise-grade Terraform modules from scratch for healthcare-specific AWS components, reducing deployment time by 30%</li>
+            <li>Built robust multi-AZ disaster recovery architecture ensuring <span class="metric">99.95% availability</span> for critical patient care systems with RTO <30 minutes</li>
+            <li>Optimized AWS API Gateway and CloudFront CDN achieving 40% performance improvement for patient portal applications serving 15,000+ patients</li>
+            <li>Implemented comprehensive security controls achieving <span class="metric">ISO 27001 compliance</span> and passing all NHS Digital security assessments</li>
+        </ul>
+    </div>
+
+    <div class="section">
+        <div class="job-title">System Administrator & IT Infrastructure Specialist</div>
+        <div class="company-info">Chelsea & Westminster Hospital NHS Foundation Trust | March 2020 - February 2021 | London, UK</div>
+        
+        <ul class="bullet-points">
+            <li>Successfully maintained <span class="metric">99.9% uptime</span> for critical hospital IT systems supporting 1,000+ staff and 50,000+ patient records annually</li>
+            <li>Implemented advanced security protocols and regular audits, reducing security incidents by 30% while ensuring healthcare regulation compliance</li>
+            <li>Led IT infrastructure upgrade project resulting in <span class="metric">40% increase in system performance</span> and reliability across all hospital departments</li>
+            <li>Optimized resource allocation and implemented virtualization technologies achieving <span class="metric">20% reduction in IT operational costs</span></li>
+            <li>Developed and tested comprehensive disaster recovery plan reducing potential system downtime from hours to minutes</li>
+        </ul>
+    </div>
+
+    <div class="portfolio-section">
+        <div class="section-title">Flagship Platforms Portfolio</div>
+        
+        <div class="portfolio-item">
+            <div class="portfolio-title">🌟 HealthHub Enterprise Healthcare Platform</div>
+            <strong>GitHub:</strong> <a href="https://github.com/abdihakim-said/healthhub-enterprise-platform" class="portfolio-link">github.com/abdihakim-said/healthhub-enterprise-platform</a><br>
+            Production-grade healthcare AI platform integrating AWS, Azure, Google Cloud, and OpenAI. Features three-pillar AI solution: medical transcription (Azure Speech Services), disease identification (Google Vision AI), and virtual assistance (OpenAI GPT-4). Serves 10,000+ daily users with 99.94% uptime and full HIPAA/GDPR compliance. Demonstrates enterprise-scale reliability engineering and healthcare AI integration.
+        </div>
+        
+        <div class="portfolio-item">
+            <div class="portfolio-title">🛒 CloudMart AI-Driven E-Commerce Platform</div>
+            Complete legacy transformation to multi-cloud, AI-powered microservices architecture. Delivered $2.25M monthly profit increase through 90% support automation, 99.97% Black Friday uptime, and real-time analytics pipeline. Showcases enterprise-scale DevOps transformation, AI integration, and business impact delivery.
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">Education & Certifications</div>
+        <div class="education-item">
+            <div class="degree">BSc Computer Science</div>
+            <div style="font-size: 9px; color: #666; margin-top: 3px;">University of Greenwich, London, UK | 2016-2019</div>
+            <div style="font-size: 9px; margin-top: 4px;"><strong>Relevant Coursework:</strong> Software Engineering, Data Visualization, Business Intelligence, Time Series Analysis & Forecasting</div>
+        </div>
+        
+        <div style="font-size: 10px; margin-top: 12px; background: #f0f8ff; padding: 8px; border-radius: 4px;">
+            <strong>Professional Certifications:</strong><br>
+            <span style="font-size: 9px;">• AWS Certified Solutions Architect<br>
+            • Kubernetes Certified Administrator (CKA)</span>
+        </div>
+    </div>
+
+    <div class="section">
+        <div class="section-title">NHS Healthcare Technology Journey</div>
+        <div style="font-size: 10px; line-height: 1.4; background: #f8f9fa; padding: 10px; border-radius: 5px; border-left: 4px solid #2c5aa0;">
+            <strong>Progressive NHS Experience:</strong> Chelsea & Westminster Hospital → Moorfields Eye Hospital → NHS Digital<br>
+            <strong>Healthcare Compliance Mastery:</strong> GDPR, NHS Digital Standards, HIPAA, Clinical Risk Management (DCB0129/DCB0160)<br>
+            <strong>Patient-Critical Systems:</strong> 99.9%+ uptime across all NHS environments, zero data breaches, comprehensive audit trails<br>
+            <strong>Clinical Integration:</strong> Deep understanding of healthcare workflows, patient safety requirements, and regulatory compliance frameworks
+        </div>
+    </div>
+</body>
+</html>
