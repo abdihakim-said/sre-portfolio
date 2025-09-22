@@ -652,6 +652,11 @@
                     <div class="cv-header">
                         <h3><i class="fas fa-award"></i> Senior SRE CV - Interview Winner Format</h3>
                         <p>Comprehensive CV showcasing £4.5M+ business impact, 99.94% uptime achievements, and multi-cloud AI expertise. Optimized for ATS systems and technical interviews.</p>
+                        <div style="background: #e8f4fd; border-left: 4px solid #2c5aa0; padding: 15px; margin: 15px 0; border-radius: 5px;">
+                            <p style="margin: 0; font-weight: 600; color: #2c5aa0;">
+                                <i class="fas fa-info-circle"></i> Need my CV? Download it directly from here - no need to ask!
+                            </p>
+                        </div>
                     </div>
                     
                     <div class="cv-highlights">
@@ -680,10 +685,10 @@
                             <i class="fas fa-eye"></i>
                             <span>View Full CV</span>
                         </a>
-                        <a href="./cv.html" download="Abdihakim_Said_Senior_SRE_CV.html" class="cv-btn secondary">
-                            <i class="fas fa-download"></i>
-                            <span>Download CV</span>
-                        </a>
+                        <button onclick="downloadPDF()" class="cv-btn secondary">
+                            <i class="fas fa-file-pdf"></i>
+                            <span>Download PDF</span>
+                        </button>
                     </div>
                     
                     <div class="social-actions">
@@ -770,6 +775,25 @@
             section.style.transition = 'opacity 0.6s ease, transform 0.6s ease';
             observer.observe(section);
         });
+    </script>
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script>
+        function downloadPDF() {
+            window.open('./cv.html', '_blank');
+            setTimeout(() => {
+                const element = document.createElement('a');
+                element.href = './cv.html';
+                element.target = '_blank';
+                element.click();
+                
+                setTimeout(() => {
+                    if (confirm('Click OK to download as PDF, or Cancel to just view')) {
+                        window.print();
+                    }
+                }, 1000);
+            }, 500);
+        }
     </script>
 </body>
 </html>
